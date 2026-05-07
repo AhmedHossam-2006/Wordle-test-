@@ -64,13 +64,15 @@ public:
 			listWord.push_back(temp);
 		};
 	 }
-	word gettheword(int ID) {
-		for (int i = 0; i < listWord.size(); i++) {
-			if (listWord[i].ID == ID) {
-				return listWord[i];
-			}
-		}
-	}
+word gettheword(int ID) {
+    for (int i = 0; i < listWord.size(); i++) {
+        if (listWord[i].ID == ID) {
+            return listWord[i];
+        }
+    }
+
+    return word();
+}
 
 };
 
